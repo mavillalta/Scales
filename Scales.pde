@@ -4,27 +4,27 @@ void setup(){
   
 
 void octsqu(int x, int y){
-  double v1=12;
-  double v2=3;
-  double v3=4;
-  double v4=6;
+  double va=12;
+  double vb=3;
+  double vc=4;
+  double vd=6;
   fill(0,0,255);
   beginShape();
-  for(int i=1; i<=v1;i++){
-    vertex(x+int(Math.round(52*Math.cos(PI/v1+i*PI/6+PI/12))),y+(int)(52*Math.sin(PI/v1+i*PI/6+PI/12)));
+  for(int i=1; i<=va;i++){
+    vertex(x+int(Math.round(52*Math.cos(PI/va+i*PI/6+PI/12))),y+(int)(52*Math.sin(PI/va+i*PI/6+PI/12)));
   }
   endShape(CLOSE);
   fill(0,255,0);
   beginShape();
   for(int i=2; i<=15;i=i+2){
-    vertex(x+int(Math.round(52*Math.cos(PI/v1+i*PI/6+PI/12))),y+(int)(52*Math.sin(PI/v1+i*PI/6+PI/12)));
+    vertex(x+int(Math.round(52*Math.cos(PI/va+i*PI/6+PI/12))),y+(int)(52*Math.sin(PI/va+i*PI/6+PI/12)));
   }
   
   endShape(CLOSE);
   fill(255,0,0);
   beginShape();
   for(int i=2;i<=12;i=i+4){
-    vertex(x+int(Math.round(52*Math.cos(PI/v1+i*PI/6+PI/12))),y+(int)(52*Math.sin(PI/v1+i*PI/6+PI/12)));
+    vertex(x+int(Math.round(52*Math.cos(PI/va+i*PI/6+PI/12))),y+(int)(52*Math.sin(PI/va+i*PI/6+PI/12)));
   }
   
   endShape(CLOSE);
@@ -51,5 +51,6 @@ void draw(){
     }
   }
 }
+
 
 
