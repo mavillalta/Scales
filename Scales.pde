@@ -4,10 +4,10 @@ void setup(){
   
 
 void octsqu(int x, int y){
-  int v1=12;
-  int v2=3;
-  int v3=4;
-  int v4=6;
+  double v1=12;
+  double v2=3;
+  double v3=4;
+  double v4=6;
   fill(0,0,255);
   beginShape();
   for(int i=1; i<=v1;i++){
@@ -51,4 +51,5 @@ void draw(){
     }
   }
 }
+
 
