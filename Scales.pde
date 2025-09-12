@@ -47,8 +47,8 @@ void draw(){
   for(int i=-100; i<=1500; i+=96){
     for(int j=-100; j<=1000; j+=96){
       octsqu(i+(int)(24*j/96),j-(int)(23*i/96));
-      System.out.println(mouseX);
-      System.out.println(mouseY);
+    
     }
   }
 }
+
