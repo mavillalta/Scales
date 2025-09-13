@@ -10,7 +10,7 @@ void octsqu(int x, int y){
   double vd=6;
   fill(0,0,255);
   beginShape();
-  for(int i=1; i<=va;i++){
+  for(int i=1; i<=12;i++){
     vertex(x+int(Math.round(52*Math.cos(PI/va+i*PI/6+PI/12))),y+(int)(52*Math.sin(PI/va+i*PI/6+PI/12)));
   }
   endShape(CLOSE);
@@ -37,8 +37,8 @@ void octsqu(int x, int y){
   fill(0,255,0);
   
   beginShape();
-  for(int i=1; i<=v3;i++){
-   vertex(x+60+int(Math.round(18*Math.cos(PI/v3+i*2*PI/v3-PI/12))),y+37+(int)(18*Math.sin(PI/v3+i*2*PI/v3-PI/12)));
+  for(int i=1; i<=vc;i++){
+   vertex(x+60+int(Math.round(18*Math.cos(PI/vc+i*2*PI/vc-PI/12))),y+37+(int)(18*Math.sin(PI/vc+i*2*PI/vc-PI/12)));
   }
   
   endShape(CLOSE);
@@ -51,6 +51,7 @@ void draw(){
     }
   }
 }
+
 
 
 
