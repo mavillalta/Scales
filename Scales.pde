@@ -33,7 +33,7 @@ void octsqu(int x, int y){
   fill(0,255,0);
   fill(0);
   
-  ellipse(x+(int)((7*(mouseX-x))/(Math.sqrt(Math.pow(mouseX-x,2)+Math.pow(mouseY-x,2)))),y+(int)(((7*(mouseY-y))/(Math.sqrt(Math.pow(mouseX-x,2)+Math.pow(mouseY-x,2))))),15,15);
+  ellipse(x+(int)((7*(mouseX-x))/(Math.sqrt(Math.pow(mouseX-x,2)%7+Math.pow(mouseY-x,2)))),y+(int)(((7*(mouseY-y))/(Math.sqrt(Math.pow(mouseX-x,2)+Math.pow(mouseY-x,2)))))%7,15,15);
   fill(0,255,0);
   
   beginShape();
@@ -52,6 +52,7 @@ void draw(){
     }
   }
 }
+
 
 
 
