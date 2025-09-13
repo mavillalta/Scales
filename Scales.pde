@@ -42,6 +42,7 @@ void octsqu(int x, int y){
   }
   
   endShape(CLOSE);
+}
 void draw(){
   background(255,0,0);
   for(int i=-100; i<=1500; i+=96){
@@ -51,6 +52,7 @@ void draw(){
     }
   }
 }
+
 
 
 
